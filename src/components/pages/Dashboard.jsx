@@ -1,6 +1,9 @@
 const Dashboard = () => {
-    return(
+    return (
         <>
+            <p>
+                Dashboard!
+            </p>
         </>
     )
 }

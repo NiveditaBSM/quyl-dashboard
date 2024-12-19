@@ -2,20 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background: #F6F8FA;
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
-.main .sidebarWrapper{
-    height: 100vh;
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Bold.ttf") format("truetype"); /* Bold font */
+  font-weight: 700;
+  font-style: normal;
 }
 
-.main .sidebarWrapper .sidebar{
-    height: 100vh;
-    background: white;
+body {
+  background: #f6f8fa;
+  font-family: "Noto Sans";
 }
 
-.main .sidebarWrapper .sidebar .sidebarTabs button{
-    justify-content: flex-start !important;
-    width: 100%;
+.main .sidebarWrapper {
+  height: 100vh;
+}
+
+.main .sidebarWrapper .sidebar {
+  height: 100vh;
+  background: white;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs button {
+  justify-content: flex-start !important;
+  width: 100% !important;
+  /* margin-left: 1.5rem; */
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  padding-left: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-family: "Noto Sans";
+  color: #6f767e;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .rightContentWrapper {
+  height: 100vh;
+}
+
+.main .rightContentWrapper .rightContent {
+  height: 100vh;
 }
