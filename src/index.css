@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #F6F8FA;
+}
+
+.main .sidebarWrapper{
+    height: 100vh;
+}
+
+.main .sidebarWrapper .sidebar{
+    height: 100vh;
+    background: white;
+}
+
+.main .sidebarWrapper .sidebar .sidebarTabs button{
+    justify-content: flex-start !important;
+    width: 100%;
+}
