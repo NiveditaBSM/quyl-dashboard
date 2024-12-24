@@ -11,52 +11,110 @@
 
 @font-face {
   font-family: "Noto Sans";
-  src: url("./assets/fonts/NotoSans-Bold.ttf") format("truetype"); /* Bold font */
+  src: url("./assets/fonts/NotoSans-SemiBold.ttf") format("truetype"); /* Bold font */
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/NotoSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
 body {
   background: #f6f8fa;
   font-family: "Noto Sans";
+  line-height: 1.2;
 }
 
 .main .sidebarWrapper {
   height: 100vh;
 }
 
-.main .sidebarWrapper .sidebar {
-  height: 100vh;
-  background: white;
-}
-
-.main .sidebarWrapper .sidebar .sidebarTabs button {
-  justify-content: flex-start !important;
-  width: 100% !important;
-  /* margin-left: 1.5rem; */
-  text-transform: capitalize;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.2;
-  padding-left: 1.5rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  font-family: "Noto Sans";
-  color: #6f767e;
-}
-
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .main .rightContentWrapper {
   height: 100vh;
+  color: #808281;
+}
+
+.main .rightContentWrapper input {
+  line-height: 1.1;
+  font-weight: 400;
 }
 
 .main .rightContentWrapper .rightContent {
   height: 100vh;
+}
+
+.main .rightContentWrapper .contentWrapper {
+  height: 100vh;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.sidebarLink {
+  color: #6b747e;
+  font-weight: 600;
+  &:hover {
+    background: #f9f9f9;
+    color: black;
+  }
+
+  &:active {
+    background: #eeeeee;
+    color: black;
+  }
+}
+
+.activeSidebarLink {
+  background: #eeeeee;
+  color: black;
 }
